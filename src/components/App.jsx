@@ -10,10 +10,6 @@ import { getContacts } from 'redux/selectors';
 export const App = () => {
  
  const contacts = useSelector(getContacts);
-
-
-  
-
   
   return (
     <div>

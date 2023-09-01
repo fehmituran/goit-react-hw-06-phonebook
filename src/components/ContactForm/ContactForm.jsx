@@ -24,8 +24,14 @@ const ContactForm = () => {
     name === 'number' && setNumber(value);
   };
 
+  const resetForm = () => {
+    setName('');
+    setNumber('');
+  };
+
   const contacts = useSelector(getContacts);
   const dispatch = useDispatch();
+
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -39,7 +45,9 @@ const ContactForm = () => {
     }
 
     dispatch(addContact(name, number));
+    e.target.reset();
     Notiflix.Notify.success(`${name} is added`);
+    resetForm();
   };
 
   return (

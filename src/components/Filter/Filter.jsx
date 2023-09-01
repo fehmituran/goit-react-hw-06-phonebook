@@ -15,14 +15,12 @@ const Filter = () => {
 
   return (
     <Form>
-       <label>
-        <Input
-          type="name"
-          value={filter}
-          onChange={handleChange}
-          placeholder="Find contacts by name"
-        />
-      </label>
+      <Input
+        type="name"
+        value={filter}
+        onChange={handleChange}
+        placeholder="Find contacts by name"
+      />
     </Form>
   );
 };
