@@ -12,5 +12,4 @@ export const Input = styled.input`
   height: 40px;
   color: red;
   font-size: 16px; 
-  border-radius: 5px;
   `;
